@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter</title>
+    <link type="text/css" href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="l-page">
+	<div class="b-filter">
+		<div class="b-filter__header">
+			<div class="b-filter__header__name"><p>Filter by</p></div>
+		</div>
+		<div class="b-filter__choose__element">
+			<div class="b-filter__choose"><a class="b-filter__choose__all" href="#">Clear All</a></div>
+	</div>
+		<div class="b-filter__option">
+			<div class="b-filter__option__category">
+				<input id="b-filter__category" name="accordion" type="checkbox" checked />
+        		<label for="b-filter__category">Category</label>
+        		<article>
+         		   	<input class="b-category-1" type="checkbox" name="accordion" value="Formal"/><span class="b-category_1">Formal</span><br/>
+    				<input class="b-category-2"  type="checkbox" name="accordion" value="Boots"/><span class="b-category_2">Boots</span><br/>
+    				<input class="b-category-3"  type="checkbox" name="accordion" value="Plimsolls/Espadrilles"/><span class="b-category_3">Plimsolls/Espadrilles</span><br/>
+    				<input class="b-category-4"  type="checkbox" name="accordion" value="Loafers/Brogues"/><span class="b-category_4">Loafers/Brogues</span><br/>
+    				<input class="b-category-5"  type="checkbox" name="accordion" value="Flip Flops"/><span class="b-category_5">Flip Flops</span>
+        		</article>
+			</div>
+			<div class="b-filter__option__colours">
+				<input id="b-filter__colours" name="accordion" type="checkbox" checked />
+        		<label for="b-filter__colours">Colours</label>
+        		<article>
+         		    <input class="b-category-1" type="checkbox" name="accordion" value="Black"/><span class="b-category_1">Black</span><br/>
+    				<input class="b-category-2"  type="checkbox" name="accordion" value="Brown"/><span class="b-category_2">Brown</span><br/>
+    				<input class="b-category-3"  type="checkbox" name="accordion" value="Blue"/><span class="b-category_3">Blue</span><br/>
+    				<input class="b-category-4"  type="checkbox" name="accordion" value="Grey"/><span class="b-category_4">Grey</span><br/>
+    				<input class="b-category-5"  type="checkbox" name="accordion" value="Khaki"/><span class="b-category_5">Khaki</span><br/>
+    				<input class="b-category-6"  type="checkbox" name="accordion" value="Navy"/><span class="b-category_6">Navy</span><br/>
+    				<input class="b-category-7"  type="checkbox" name="accordion" value="Orange"/><span class="b-category_7">Orange</span><br/>
+    				<input class="b-category-8"  type="checkbox" name="accordion" value="Purple"/><span class="b-category_8">Purple</span><br/>
+    				<input class="b-category-9"  type="checkbox" name="accordion" value="Red"/><span class="b-category_9">Red</span>
+        		</article>
+			</div>
+			<div class="b-filter__option__size">
+				<input id="b-filter__size" name="accordion" type="checkbox" checked />
+        		<label for="b-filter__size">Size</label>
+        		<article>
+         		   <input class="b-category-1" type="checkbox" name="accordion" value="Small"/><span class="b-category_1">Small</span><br/>
+    				<input class="b-category-2"  type="checkbox" name="accordion" value="Medium"/><span class="b-category_2">Medium</span><br/>
+    				<input class="b-category-3"  type="checkbox" name="accordion" value="Large"/><span class="b-category_3">Large</span><br/>
+    				<input class="b-category-4"  type="checkbox" name="accordion" value="X-Large"/><span class="b-category_4">X-Large</span>
+        		</article>
+			</div>
+			<div class="b-filter__option__other">
+				<input id="b-filter__other" name="accordion" type="checkbox" checked />
+        		<label for="b-filter__other">Other</label>
+        		<article>
+         		   <p>Какой нибудь текст... </p>
+        		</article>
+			</div>
+			<div class="b-filter__option__price">
+				<input id="b-filter__price" name="accordion" type="checkbox" checked />
+        		<label for="b-filter__price">Price</label>
+        		<article class="b-filter__price__wrap">
+         		   	<form class="b-filter__price__form" action="action_page.php"
+					oninput="x.value=parseInt(a.value)">
+					 <input class="b-price-01" type="range" id="a" name="a" min="150" max="250">
+					  <span>&#163 250</span> 
+					  <br>
+					  <output class="b-price__total__01" name="x" for="a"></output>
+					  <br><br>
+					</form>
+					<form class="b-filter__price__form-2"action="action_page.php"
+					oninput="y.value=parseInt(c.value)">
+					 <span>&#163 20</span>
+					  <input class="b-price-02" type="range" id="c" name="c" min="20" max="150" value="20">
+					  <br>
+					  <output class="b-price__total__02" name="y" for="c"></output>
+					  <br><br>
+					</form>
+        		</article>
+			</div>
+		</div>
+		<div class="b-filter__button"></div>
+	</div>
+</body>
+</html>

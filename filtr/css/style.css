@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Montserrat-Bold.ttf";
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular.ttf";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+.b-filter {
+	position: relative;
+	margin: 50px 0 0 100px;
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+}
+.b-filter__header__name, .b-filter__choose__element, .b-filter__option  {
+	position: relative;
+	width: 280px;
+	height: 45px;
+}
+.b-filter__header__name {
+	background-color: #03a9f4;	
+}
+.b-filter__header__name p {
+	color: white;
+	font: 15px 'Montserrat-Bold', sans-serif;
+	line-height: 17px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 15px 23px;
+}
+.b-filter__choose__element {
+	margin-top: 10px;
+	height: 110px;
+	background-color: #f9f9f9;
+}
+.b-filter__choose {
+	position: relative;
+	top: 75px;
+	left: 23px;
+	width: 70px;
+}
+.b-filter__choose__all {
+	color: #03a9f4;
+	font: 15px 'Montserrat-Regular', sans-serif;
+	letter-spacing: .5px;
+}
+.b-filter__option {
+	margin-top: 20px;
+}
+.b-filter__option__category, .b-filter__option__colours, 
+.b-filter__option__size, .b-filter__option__other {
+	border-bottom: 2px dotted #b9b9b9;
+	width: 277px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.b-filter__option__price {
+	width: 277px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.b-filter__option label {
+	position: relative;	
+	display: block;
+	cursor: pointer;
+	z-index: 20;
+	color: #03a9f4;
+	font: 13px 'Montserrat-Bold', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 17px;	
+}
+#b-filter__category, #b-filter__colours, 
+#b-filter__size, #b-filter__other, #b-filter__price {
+	display: none;
+}
+ .b-filter__option article{
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;  
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.b-filter__option label:before,
+.b-filter__option input:checked + label:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: -5px;
+	background: transparent url(../images/plus.png) no-repeat center center;	
+}
+.b-filter__option input:checked + label:after{
+	background-image: url(../images/minus.png);	
+}
+.b-filter__option input:checked ~ article {    
+    height: 132px;
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+#b-filter__colours:checked ~ article {    
+    height: 237px;
+}
+#b-filter__size:checked ~ article {    
+    height: 107px;
+}
+.b-filter__option span{
+	color: black;
+	font: 14px 'Montserrat-Regular', sans-serif;	
+}
+.b-category-1, .b-category-2, .b-category-3,
+.b-category-4, .b-category-5, .b-category-6,
+.b-category-7, .b-category-8, .b-category-9 {
+	cursor: pointer;
+	margin-top: 10px;
+}
+.b-category-1:checked ~ .b-category_1, .b-category-2:checked ~ .b-category_2,
+.b-category-3:checked ~ .b-category_3, .b-category-4:checked ~ .b-category_4,
+.b-category-5:checked ~ .b-category_5, .b-category-6:checked ~ .b-category_6,
+.b-category-7:checked ~ .b-category_7, .b-category-8:checked ~ .b-category_8,
+.b-category-9:checked ~ .b-category_9 {
+	font-weight: bold;
+}
+article {
+	top: 5px;
+}
+.b-filter__price__wrap {
+	color: black;
+	font-family: 14px 'Montserrat-Bold', sans-serif;
+	line-height: 17px;
+	position: relative;
+}
+.b-filter__price__form {
+	position: absolute;
+	left: 137px;
+	top: 20px;
+	z-index: 2;
+}
+.b-filter__price__form-2 {
+	position: absolute;
+	top: 20px;
+	//left: -30px;
+}
+.b-filter__price__form-2 span {
+	left: 50px;
+}
+.b-price-02, .b-price-01 {
+	width: 135px;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+
+
